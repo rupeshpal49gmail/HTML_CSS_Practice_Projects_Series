@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Stack+Sans+Text:wght@200..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  /* overflow: hidden; */
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  .image_container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .burger {
+      position: absolute;
+      top: 30%;
+      left: 10%;
+    }
+    .tomato-1 {
+      position: absolute;
+      top: 70%;
+      left: 8%;
+    }
+    .tomato-2 {
+      position: absolute;
+      top: 35%;
+      right: 15%;
+    }
+    .pizza {
+      position: absolute;
+      top: 45%;
+      right: 10%;
+    }
+    .momo {
+      position: absolute;
+      top: 6%;
+      right: 15%;
+    }
+    .leaf {
+      position: absolute;
+      top: 6%;
+      left: 28%;
+    }
+
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
+      h1 {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 40px;
+        text-align: center;
+        color: red;
+      }
+      p {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 450px;
+      }
+    }
+  }
+}

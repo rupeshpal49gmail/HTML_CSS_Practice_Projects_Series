@@ -86,5 +86,42 @@ main {
         max-width: 450px;
       }
     }
+    .info-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 120px;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      gap: 16px;
+      padding: 15px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+
+      .info-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .info-text {
+          display: flex;
+          flex-direction: column;
+          .info-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+          }
+        }
+        .info-icon {
+          height: 50px;
+          width: 50px;
+          object-fit: contain;
+        }
+        .info-label {
+          font-size: 16px;
+          color: black;
+          font-weight: 500;
+        }
+      }
+    }
   }
 }
